@@ -22,18 +22,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-blue text-white">
-        <div id="video-background-container" className="relative w-full h-screen overflow-hidden">
+      <body className="text-white">
+        <div id="video-background-container" className="absolute w-full h-screen overflow-hidden">
           <video id="video-background" autoPlay muted className="absolute top-0 left-0 w-full h-full object-cover"></video>
-          <div className="relative z-10 container m-5 bg-blue w-full">
-            <div className="flex">
-              <div className="w-full">
+          <div className="flex grid-cols-2 gap-4 fixed z-10 w-full bottom-0">
+
+              <div className="w-full m-5">
                 {children}
               </div>
-              <div className="grow-1 w-80 rounded border border-grey">
+              <div className="hidden w-80 rounded border border-grey bg-blue">
                 <li>Sfdsf</li>
               </div>
-            </div>
+
           </div>
         </div>
         <ScrollRestoration />
