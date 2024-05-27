@@ -4,7 +4,6 @@
 
 /* styles.css or included in your tailwind.css */
 #video-background-container {
-    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
